@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "SweetAlert";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<br />
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="~/Scripts/jquery-3.4.1.js"></script>
+<h2>SweetAlert Sayfası</h2>
+
+<button class="btn btn-danger" id="button1">Merhaba Sweet Alert</button>
+<br />
+<br />
+<button class="btn btn-danger" id="button2">Title & Description</button>
+<br />
+<br />
+<button class="btn btn-danger" id="button3">Sonuç Döndüren Sweet Alert</button>
+
+<script>
+    $('#button1').click(function () {
+        swal("Hello Sweet Alert")
+    })
+</script>
+
+<script>
+    $('#button2').click(function () {
+        swal("Sweet Alert Title", "Merhaba Sweet alert title and description kullandınız")
+    })
+</script>
+<script>
+    $('#button3').click(function () {
+        swal("Vayyy", "Sonuç döndürüldü","success")
+    })
+</script>
+
+
